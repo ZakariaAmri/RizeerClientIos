@@ -35,6 +35,7 @@
 		E661ACD51AD33F8D00916852 /* UIProgressView+AFNetworking.m in Sources */ = {isa = PBXBuildFile; fileRef = E661ACC21AD33F8D00916852 /* UIProgressView+AFNetworking.m */; };
 		E661ACD61AD33F8D00916852 /* UIRefreshControl+AFNetworking.m in Sources */ = {isa = PBXBuildFile; fileRef = E661ACC41AD33F8D00916852 /* UIRefreshControl+AFNetworking.m */; };
 		E661ACD71AD33F8D00916852 /* UIWebView+AFNetworking.m in Sources */ = {isa = PBXBuildFile; fileRef = E661ACC61AD33F8D00916852 /* UIWebView+AFNetworking.m */; };
+		E673C4DC1AD6AF54006AF698 /* lecteurViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E673C4DB1AD6AF54006AF698 /* lecteurViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -105,6 +106,8 @@
 		E661ACC41AD33F8D00916852 /* UIRefreshControl+AFNetworking.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIRefreshControl+AFNetworking.m"; sourceTree = "<group>"; };
 		E661ACC51AD33F8D00916852 /* UIWebView+AFNetworking.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIWebView+AFNetworking.h"; sourceTree = "<group>"; };
 		E661ACC61AD33F8D00916852 /* UIWebView+AFNetworking.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIWebView+AFNetworking.m"; sourceTree = "<group>"; };
+		E673C4DA1AD6AF54006AF698 /* lecteurViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = lecteurViewController.h; sourceTree = "<group>"; };
+		E673C4DB1AD6AF54006AF698 /* lecteurViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = lecteurViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -160,6 +163,8 @@
 				E6185B831ACD5FFF00E45AEB /* Supporting Files */,
 				E635F0351AD5669F00D41E08 /* ConnexionViewContoller.h */,
 				E635F0361AD5669F00D41E08 /* ConnexionViewContoller.m */,
+				E673C4DA1AD6AF54006AF698 /* lecteurViewController.h */,
+				E673C4DB1AD6AF54006AF698 /* lecteurViewController.m */,
 			);
 			path = RizeerClientIos;
 			sourceTree = "<group>";
@@ -354,6 +359,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E673C4DC1AD6AF54006AF698 /* lecteurViewController.m in Sources */,
 				E661ACCF1AD33F8D00916852 /* AFURLSessionManager.m in Sources */,
 				E661ACA01AD3343600916852 /* RadioViewController.m in Sources */,
 				E6185B8C1ACD5FFF00E45AEB /* ViewController.m in Sources */,
@@ -502,6 +508,7 @@
 				INFOPLIST_FILE = RizeerClientIos/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
 		};
@@ -512,6 +519,7 @@
 				INFOPLIST_FILE = RizeerClientIos/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
 		};

@@ -45,6 +45,14 @@
     connexionB.layer.cornerRadius = 10;
     connexionB.layer.borderColor = [[UIColor grayColor] CGColor];
      */
+    _segment.selectedSegmentIndex = 1;
+    /*
+    _connexionV.hidden = YES;
+    _inscriptionV.hidden = NO;
+    _visiteV.hidden = YES;
+     */
+    self.navigationItem.titleView = self.segment;
+    
 }
 
 - (void)didReceiveMemoryWarning {
