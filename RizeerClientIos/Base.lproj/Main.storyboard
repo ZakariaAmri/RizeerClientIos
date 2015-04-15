@@ -1,7 +1,8 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6751" systemVersion="14C1510" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="Hco-c3-E3g">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6751" systemVersion="14C1510" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="eGb-ml-iZe">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6736"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
         <!--Navigation Controller-->
@@ -11,6 +12,7 @@
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="ktj-wX-qdN">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
+                        <color key="barTintColor" red="0.90196079019999997" green="0.90196079019999997" blue="0.90196079019999997" alpha="1" colorSpace="calibratedRGB"/>
                     </navigationBar>
                     <connections>
                         <segue destination="ylr-Nv-k4a" kind="relationship" relationship="rootViewController" id="rbM-UL-mxt"/>
@@ -18,6 +20,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="oT4-b0-5iY" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="-2179" y="-154"/>
         </scene>
         <!--Lecteur View Controller-->
         <scene sceneID="zuK-f0-TD4">
@@ -31,7 +34,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="BPL-ME-fH5">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" image="note-de-musique.png" translatesAutoresizingMaskIntoConstraints="NO" id="BPL-ME-fH5">
                                 <rect key="frame" x="110" y="110" width="380" height="380"/>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0uC-IA-DAd">
@@ -39,29 +42,78 @@
                                 <state key="normal" title="Play">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <action selector="playMusic:" destination="eGb-ml-iZe" eventType="touchUpInside" id="ffp-UD-LLc"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ILA-LJ-9v1">
                                 <rect key="frame" x="289" y="498" width="46" height="30"/>
                                 <state key="normal" title="Pause">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <action selector="pauseMusic:" destination="eGb-ml-iZe" eventType="touchUpInside" id="V6q-tA-eH1"/>
+                                </connections>
                             </button>
-                            <slider opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="qTG-FT-98h">
+                            <slider opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="qTG-FT-98h">
                                 <rect key="frame" x="108" y="536" width="384" height="31"/>
+                                <accessibility key="accessibilityConfiguration">
+                                    <accessibilityTraits key="traits" none="YES" playsSound="YES"/>
+                                </accessibility>
+                                <color key="minimumTrackTintColor" red="1" green="0.076998724694339993" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="maximumTrackTintColor" red="0.50196081399917603" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="thumbTintColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <connections>
+                                    <action selector="changeTime:" destination="eGb-ml-iZe" eventType="touchUpInside" id="nsB-DB-27r"/>
+                                    <action selector="valuechange:" destination="eGb-ml-iZe" eventType="valueChanged" id="fEt-yr-MHk"/>
+                                </connections>
                             </slider>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="D9w-wm-Gtp">
                                 <rect key="frame" x="343" y="498" width="46" height="30"/>
                                 <state key="normal" title="Next">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <action selector="nextMusic:" destination="eGb-ml-iZe" eventType="touchUpInside" id="Xxd-MK-fBZ"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Rwb-yp-KYr">
                                 <rect key="frame" x="212" y="498" width="31" height="30"/>
                                 <state key="normal" title="Prev">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <action selector="prevMusic:" destination="eGb-ml-iZe" eventType="touchUpInside" id="Th6-Ke-suu"/>
+                                </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Titre de la musique" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ngU-6C-nZq">
+                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ket-bf-pIb">
+                                <rect key="frame" x="492" y="271" width="108" height="20"/>
+                                <state key="normal" title="Add to playlist">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="ajouterAPlaylist:" destination="eGb-ml-iZe" eventType="touchUpInside" id="jjY-ON-izd"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JMJ-Zr-EFN">
+                                <rect key="frame" x="538" y="299" width="46" height="30"/>
+                                <state key="normal" title="Rise">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="rizeArtist:" destination="eGb-ml-iZe" eventType="touchUpInside" id="mSy-35-gOV"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gJz-SK-Cp6">
+                                <rect key="frame" x="538" y="337" width="46" height="30"/>
+                                <state key="normal" title="Folow">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="followArtist:" destination="eGb-ml-iZe" eventType="touchUpInside" id="E8o-7i-Vw5"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="Titre de la musique" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ngU-6C-nZq">
                                 <rect key="frame" x="227" y="64" width="146" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
@@ -72,38 +124,50 @@
                                 <state key="normal" title="Voir Artist">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <action selector="voirArtist:" destination="eGb-ml-iZe" eventType="touchUpInside" id="foO-1K-Lzh"/>
+                                </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="m5U-j7-txU">
+                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="m5U-j7-txU">
                                 <rect key="frame" x="554" y="233" width="30" height="30"/>
                                 <state key="normal" title="Like">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ket-bf-pIb">
-                                <rect key="frame" x="492" y="271" width="108" height="20"/>
-                                <state key="normal" title="Add to playlist">
-                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JMJ-Zr-EFN">
-                                <rect key="frame" x="538" y="299" width="46" height="30"/>
-                                <state key="normal" title="Rise">
-                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gJz-SK-Cp6">
-                                <rect key="frame" x="538" y="337" width="46" height="30"/>
-                                <state key="normal" title="Folow">
-                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
+                                <connections>
+                                    <action selector="likeMusic:" destination="eGb-ml-iZe" eventType="touchUpInside" id="IyH-T6-GAl"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="centerX" secondItem="ngU-6C-nZq" secondAttribute="centerX" id="3RX-1k-RM7"/>
+                            <constraint firstItem="qTG-FT-98h" firstAttribute="leading" secondItem="OFT-gM-zQn" secondAttribute="leading" constant="20" id="4JG-gu-4nb"/>
+                            <constraint firstAttribute="centerX" secondItem="BPL-ME-fH5" secondAttribute="centerX" id="72k-tf-fiE"/>
+                            <constraint firstItem="JMJ-Zr-EFN" firstAttribute="trailing" secondItem="OFT-gM-zQn" secondAttribute="trailingMargin" constant="10" id="H0o-zV-G6f"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="Ket-bf-pIb" secondAttribute="trailing" constant="10" id="SYm-J0-NJu"/>
+                            <constraint firstItem="gJz-SK-Cp6" firstAttribute="trailing" secondItem="OFT-gM-zQn" secondAttribute="trailingMargin" constant="10" id="gzD-bK-KCz"/>
+                            <constraint firstAttribute="centerX" secondItem="qTG-FT-98h" secondAttribute="centerX" id="wFd-Uu-4Kf"/>
+                            <constraint firstItem="m5U-j7-txU" firstAttribute="trailing" secondItem="OFT-gM-zQn" secondAttribute="trailingMargin" constant="10" id="yNO-lu-h9U"/>
+                        </constraints>
                     </view>
+                    <connections>
+                        <outlet property="addPlaylistButton" destination="Ket-bf-pIb" id="fu1-Es-o7c"/>
+                        <outlet property="avancementMusicSlider" destination="qTG-FT-98h" id="yk2-hY-Qy7"/>
+                        <outlet property="detailArtistButton" destination="tUd-bw-0kk" id="REf-kC-vM5"/>
+                        <outlet property="followButton" destination="gJz-SK-Cp6" id="DeZ-JK-uC6"/>
+                        <outlet property="imageAlbum" destination="BPL-ME-fH5" id="fB2-s4-JtM"/>
+                        <outlet property="likeButton" destination="m5U-j7-txU" id="pt8-Ob-iad"/>
+                        <outlet property="nextMusicButton" destination="D9w-wm-Gtp" id="WAr-0m-tFv"/>
+                        <outlet property="pauseButton" destination="ILA-LJ-9v1" id="GxN-wu-zfw"/>
+                        <outlet property="playButton" destination="0uC-IA-DAd" id="7bB-zv-sHI"/>
+                        <outlet property="previousMusicButton" destination="Rwb-yp-KYr" id="LXP-Qd-yQg"/>
+                        <outlet property="rizeButton" destination="JMJ-Zr-EFN" id="SEj-O5-Ns4"/>
+                        <outlet property="titreMusic" destination="ngU-6C-nZq" id="7C1-tr-T3e"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="5KH-ri-ixr" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-2083" y="-484"/>
+            <point key="canvasLocation" x="-1991" y="-1088"/>
         </scene>
         <!--Connexion View Contoller-->
         <scene sceneID="JYd-HO-LSQ">
@@ -139,44 +203,54 @@
                             </segmentedControl>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="6fY-Mb-VhE" userLabel="VisiteView">
                                 <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                                <color key="backgroundColor" red="0.40000000600000002" green="0.40000000600000002" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                             </view>
-                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="zcN-Vu-qdS" userLabel="InscriptionView">
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="zcN-Vu-qdS" userLabel="InscriptionView">
                                 <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
-                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                <color key="backgroundColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                             </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="xGM-yB-RXU" userLabel="ConnexionView">
                                 <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                                 <subviews>
-                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Login ou mail" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="bGi-tR-WlF">
-                                        <rect key="frame" x="231" y="164" width="139" height="30"/>
+                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Login ou mail" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="bGi-tR-WlF">
+                                        <rect key="frame" x="231" y="168" width="139" height="30"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <textInputTraits key="textInputTraits"/>
                                     </textField>
                                     <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oUU-O4-8pg">
-                                        <rect key="frame" x="258" y="333" width="84" height="30"/>
+                                        <rect key="frame" x="258" y="335" width="84" height="30"/>
                                         <state key="normal" title="Connexion">
                                             <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                         </state>
+                                        <connections>
+                                            <action selector="connexion:" destination="ylr-Nv-k4a" eventType="touchUpInside" id="sII-O8-Ibj"/>
+                                        </connections>
                                     </button>
                                     <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Passeword" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="CEj-4N-oXf">
-                                        <rect key="frame" x="252" y="263" width="97" height="30"/>
+                                        <rect key="frame" x="252" y="238" width="97" height="30"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <textInputTraits key="textInputTraits"/>
                                     </textField>
                                 </subviews>
-                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                             </view>
                         </subviews>
-                        <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
                         <constraints>
+                            <constraint firstItem="xGM-yB-RXU" firstAttribute="top" secondItem="Mnt-C2-0jS" secondAttribute="topMargin" constant="400" id="3Dz-A3-K09"/>
                             <constraint firstAttribute="bottom" secondItem="6fY-Mb-VhE" secondAttribute="bottom" id="4B0-NL-XLs"/>
                             <constraint firstItem="6fY-Mb-VhE" firstAttribute="top" secondItem="Mnt-C2-0jS" secondAttribute="top" id="76q-PQ-LbP"/>
                             <constraint firstAttribute="trailing" secondItem="xGM-yB-RXU" secondAttribute="trailing" id="7YL-b0-0Xh"/>
                             <constraint firstItem="xGM-yB-RXU" firstAttribute="leading" secondItem="Mnt-C2-0jS" secondAttribute="leading" id="8Op-zj-pbX"/>
+                            <constraint firstItem="6fY-Mb-VhE" firstAttribute="top" secondItem="Mnt-C2-0jS" secondAttribute="topMargin" constant="400" id="ABJ-Af-ev5"/>
                             <constraint firstItem="6fY-Mb-VhE" firstAttribute="leading" secondItem="Mnt-C2-0jS" secondAttribute="leading" id="CVh-Qz-h04"/>
+                            <constraint firstAttribute="trailing" secondItem="zcN-Vu-qdS" secondAttribute="trailing" id="R2K-wV-X2h"/>
                             <constraint firstAttribute="trailing" secondItem="6fY-Mb-VhE" secondAttribute="trailing" id="UGq-PI-eUL"/>
+                            <constraint firstItem="zcN-Vu-qdS" firstAttribute="top" secondItem="Mnt-C2-0jS" secondAttribute="top" id="fke-Zz-8Oq"/>
+                            <constraint firstItem="zcN-Vu-qdS" firstAttribute="top" secondItem="Mnt-C2-0jS" secondAttribute="topMargin" constant="400" id="kCY-3b-BIY"/>
                             <constraint firstAttribute="bottom" secondItem="xGM-yB-RXU" secondAttribute="bottom" id="m35-oG-45Z"/>
+                            <constraint firstItem="zcN-Vu-qdS" firstAttribute="leading" secondItem="Mnt-C2-0jS" secondAttribute="leading" id="rZd-98-KSS"/>
                             <constraint firstItem="xGM-yB-RXU" firstAttribute="top" secondItem="Mnt-C2-0jS" secondAttribute="top" id="s0b-eY-wV6"/>
+                            <constraint firstItem="bbH-pd-Cqg" firstAttribute="top" secondItem="zcN-Vu-qdS" secondAttribute="bottom" id="skP-Zh-yh4"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="G3v-M0-yEY"/>
@@ -447,9 +521,6 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
-                    <connections>
-                        <segue destination="Nxm-Rv-jZL" kind="relationship" relationship="rootViewController" id="8HP-5Y-9Ix"/>
-                    </connections>
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="zu5-CE-swe" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -768,4 +839,7 @@
             <point key="canvasLocation" x="-725" y="-1632"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="note-de-musique.png" width="256" height="256"/>
+    </resources>
 </document>

@@ -36,6 +36,11 @@
 		E661ACD61AD33F8D00916852 /* UIRefreshControl+AFNetworking.m in Sources */ = {isa = PBXBuildFile; fileRef = E661ACC41AD33F8D00916852 /* UIRefreshControl+AFNetworking.m */; };
 		E661ACD71AD33F8D00916852 /* UIWebView+AFNetworking.m in Sources */ = {isa = PBXBuildFile; fileRef = E661ACC61AD33F8D00916852 /* UIWebView+AFNetworking.m */; };
 		E673C4DC1AD6AF54006AF698 /* lecteurViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E673C4DB1AD6AF54006AF698 /* lecteurViewController.m */; };
+		E673C4DF1AD6B1E4006AF698 /* TokenController.m in Sources */ = {isa = PBXBuildFile; fileRef = E673C4DE1AD6B1E4006AF698 /* TokenController.m */; };
+		E673C4E11AD8257B006AF698 /* note-de-musique.png in Resources */ = {isa = PBXBuildFile; fileRef = E673C4E01AD8257B006AF698 /* note-de-musique.png */; };
+		E673C4E41AD8311C006AF698 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E673C4E21AD8311C006AF698 /* AVFoundation.framework */; };
+		E673C4E51AD8311C006AF698 /* AVKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E673C4E31AD8311C006AF698 /* AVKit.framework */; };
+		E673C4E81AD98C03006AF698 /* 01-sofiane-echec_et_mat.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = E673C4E71AD98C03006AF698 /* 01-sofiane-echec_et_mat.mp3 */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -108,6 +113,13 @@
 		E661ACC61AD33F8D00916852 /* UIWebView+AFNetworking.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIWebView+AFNetworking.m"; sourceTree = "<group>"; };
 		E673C4DA1AD6AF54006AF698 /* lecteurViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = lecteurViewController.h; sourceTree = "<group>"; };
 		E673C4DB1AD6AF54006AF698 /* lecteurViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = lecteurViewController.m; sourceTree = "<group>"; };
+		E673C4DD1AD6B1E4006AF698 /* TokenController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TokenController.h; sourceTree = "<group>"; };
+		E673C4DE1AD6B1E4006AF698 /* TokenController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TokenController.m; sourceTree = "<group>"; };
+		E673C4E01AD8257B006AF698 /* note-de-musique.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "note-de-musique.png"; path = "../../note-de-musique.png"; sourceTree = "<group>"; };
+		E673C4E21AD8311C006AF698 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		E673C4E31AD8311C006AF698 /* AVKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVKit.framework; path = System/Library/Frameworks/AVKit.framework; sourceTree = SDKROOT; };
+		E673C4E61AD843E0006AF698 /* music.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; name = music.m4a; path = ../../../Desktop/music.m4a; sourceTree = "<group>"; };
+		E673C4E71AD98C03006AF698 /* 01-sofiane-echec_et_mat.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "01-sofiane-echec_et_mat.mp3"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -115,6 +127,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E673C4E41AD8311C006AF698 /* AVFoundation.framework in Frameworks */,
+				E673C4E51AD8311C006AF698 /* AVKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -131,6 +145,10 @@
 		E6185B771ACD5FFF00E45AEB = {
 			isa = PBXGroup;
 			children = (
+				E673C4E61AD843E0006AF698 /* music.m4a */,
+				E673C4E71AD98C03006AF698 /* 01-sofiane-echec_et_mat.mp3 */,
+				E673C4E21AD8311C006AF698 /* AVFoundation.framework */,
+				E673C4E31AD8311C006AF698 /* AVKit.framework */,
 				E6185B821ACD5FFF00E45AEB /* RizeerClientIos */,
 				E6185B9C1ACD5FFF00E45AEB /* RizeerClientIosTests */,
 				E6185B811ACD5FFF00E45AEB /* Products */,
@@ -154,6 +172,7 @@
 				E6185B8A1ACD5FFF00E45AEB /* ViewController.h */,
 				E6185B8B1ACD5FFF00E45AEB /* ViewController.m */,
 				E6185B8D1ACD5FFF00E45AEB /* Main.storyboard */,
+				E673C4E01AD8257B006AF698 /* note-de-musique.png */,
 				E6185C381ACD72FA00E45AEB /* NavigationViewController.h */,
 				E6185C391ACD72FA00E45AEB /* NavigationViewController.m */,
 				E6185B901ACD5FFF00E45AEB /* Images.xcassets */,
@@ -165,6 +184,8 @@
 				E635F0361AD5669F00D41E08 /* ConnexionViewContoller.m */,
 				E673C4DA1AD6AF54006AF698 /* lecteurViewController.h */,
 				E673C4DB1AD6AF54006AF698 /* lecteurViewController.m */,
+				E673C4DD1AD6B1E4006AF698 /* TokenController.h */,
+				E673C4DE1AD6B1E4006AF698 /* TokenController.m */,
 			);
 			path = RizeerClientIos;
 			sourceTree = "<group>";
@@ -339,9 +360,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E673C4E11AD8257B006AF698 /* note-de-musique.png in Resources */,
 				E6185B8F1ACD5FFF00E45AEB /* Main.storyboard in Resources */,
 				E6185B941ACD5FFF00E45AEB /* LaunchScreen.xib in Resources */,
 				E6185B911ACD5FFF00E45AEB /* Images.xcassets in Resources */,
+				E673C4E81AD98C03006AF698 /* 01-sofiane-echec_et_mat.mp3 in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -364,6 +387,7 @@
 				E661ACA01AD3343600916852 /* RadioViewController.m in Sources */,
 				E6185B8C1ACD5FFF00E45AEB /* ViewController.m in Sources */,
 				E661ACCA1AD33F8D00916852 /* AFNetworkReachabilityManager.m in Sources */,
+				E673C4DF1AD6B1E4006AF698 /* TokenController.m in Sources */,
 				E661ACD01AD33F8D00916852 /* AFNetworkActivityIndicatorManager.m in Sources */,
 				E6185B891ACD5FFF00E45AEB /* AppDelegate.m in Sources */,
 				E661ACCC1AD33F8D00916852 /* AFURLConnectionOperation.m in Sources */,

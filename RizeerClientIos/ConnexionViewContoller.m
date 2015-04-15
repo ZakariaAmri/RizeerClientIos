@@ -7,6 +7,7 @@
 //
 
 #import "ConnexionViewContoller.h"
+#import "AppDelegate.h"
 
 @interface ConnexionViewContoller ()
 
@@ -35,6 +36,13 @@
         default:
             break;
     }
+}
+- (IBAction)connexion:(id)sender {
+    Boolean test;
+    TokenController *t = [[TokenController alloc] init];
+    test = [t receptionTicket];
+    NSLog(@"Le ticket est : %d",test);
+    
 }
 
 - (void)viewDidLoad {
