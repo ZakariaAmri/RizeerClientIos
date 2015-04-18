@@ -26,19 +26,6 @@
 		E61DF1CA1AE2A29100796DB0 /* AFURLResponseSerialization.m in Sources */ = {isa = PBXBuildFile; fileRef = E61DF1951AE2A29100796DB0 /* AFURLResponseSerialization.m */; };
 		E61DF1CB1AE2A29100796DB0 /* AFURLSessionManager.m in Sources */ = {isa = PBXBuildFile; fileRef = E61DF1971AE2A29100796DB0 /* AFURLSessionManager.m */; };
 		E61DF1CC1AE2A29100796DB0 /* AFNetworkActivityIndicatorManager.m in Sources */ = {isa = PBXBuildFile; fileRef = E61DF19A1AE2A29100796DB0 /* AFNetworkActivityIndicatorManager.m */; };
-		E61DF1CD1AE2A29100796DB0 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = E61DF19D1AE2A29100796DB0 /* AppDelegate.m */; };
-		E61DF1CE1AE2A29100796DB0 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = E61DF19E1AE2A29100796DB0 /* LaunchScreen.xib */; };
-		E61DF1CF1AE2A29100796DB0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E61DF1A01AE2A29100796DB0 /* Main.storyboard */; };
-		E61DF1D01AE2A29100796DB0 /* ConnexionViewContoller.m in Sources */ = {isa = PBXBuildFile; fileRef = E61DF1A31AE2A29100796DB0 /* ConnexionViewContoller.m */; };
-		E61DF1D11AE2A29100796DB0 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E61DF1A41AE2A29100796DB0 /* Images.xcassets */; };
-		E61DF1D21AE2A29100796DB0 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = E61DF1A51AE2A29100796DB0 /* Info.plist */; };
-		E61DF1D31AE2A29100796DB0 /* lecteurViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E61DF1A71AE2A29100796DB0 /* lecteurViewController.m */; };
-		E61DF1D41AE2A29100796DB0 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = E61DF1A81AE2A29100796DB0 /* main.m */; };
-		E61DF1D51AE2A29100796DB0 /* NavigationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E61DF1AA1AE2A29100796DB0 /* NavigationViewController.m */; };
-		E61DF1D61AE2A29100796DB0 /* RadioViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E61DF1AC1AE2A29100796DB0 /* RadioViewController.m */; };
-		E61DF1D71AE2A29100796DB0 /* SWRevealViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E61DF1AF1AE2A29100796DB0 /* SWRevealViewController.m */; };
-		E61DF1D81AE2A29100796DB0 /* TokenController.m in Sources */ = {isa = PBXBuildFile; fileRef = E61DF1B11AE2A29100796DB0 /* TokenController.m */; };
-		E61DF1D91AE2A29100796DB0 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E61DF1B31AE2A29100796DB0 /* ViewController.m */; };
 		E61DF1DA1AE2A29100796DB0 /* UIActivityIndicatorView+AFNetworking.m in Sources */ = {isa = PBXBuildFile; fileRef = E61DF1B51AE2A29100796DB0 /* UIActivityIndicatorView+AFNetworking.m */; };
 		E61DF1DB1AE2A29100796DB0 /* UIAlertView+AFNetworking.m in Sources */ = {isa = PBXBuildFile; fileRef = E61DF1B71AE2A29100796DB0 /* UIAlertView+AFNetworking.m */; };
 		E61DF1DC1AE2A29100796DB0 /* UIButton+AFNetworking.m in Sources */ = {isa = PBXBuildFile; fileRef = E61DF1B91AE2A29100796DB0 /* UIButton+AFNetworking.m */; };
@@ -105,27 +92,6 @@
 		E61DF1971AE2A29100796DB0 /* AFURLSessionManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFURLSessionManager.m; sourceTree = "<group>"; };
 		E61DF1991AE2A29100796DB0 /* AFNetworkActivityIndicatorManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFNetworkActivityIndicatorManager.h; sourceTree = "<group>"; };
 		E61DF19A1AE2A29100796DB0 /* AFNetworkActivityIndicatorManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFNetworkActivityIndicatorManager.m; sourceTree = "<group>"; };
-		E61DF19C1AE2A29100796DB0 /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
-		E61DF19D1AE2A29100796DB0 /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		E61DF19F1AE2A29100796DB0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
-		E61DF1A11AE2A29100796DB0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		E61DF1A21AE2A29100796DB0 /* ConnexionViewContoller.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ConnexionViewContoller.h; sourceTree = "<group>"; };
-		E61DF1A31AE2A29100796DB0 /* ConnexionViewContoller.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ConnexionViewContoller.m; sourceTree = "<group>"; };
-		E61DF1A41AE2A29100796DB0 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
-		E61DF1A51AE2A29100796DB0 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		E61DF1A61AE2A29100796DB0 /* lecteurViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = lecteurViewController.h; sourceTree = "<group>"; };
-		E61DF1A71AE2A29100796DB0 /* lecteurViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = lecteurViewController.m; sourceTree = "<group>"; };
-		E61DF1A81AE2A29100796DB0 /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		E61DF1A91AE2A29100796DB0 /* NavigationViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NavigationViewController.h; sourceTree = "<group>"; };
-		E61DF1AA1AE2A29100796DB0 /* NavigationViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NavigationViewController.m; sourceTree = "<group>"; };
-		E61DF1AB1AE2A29100796DB0 /* RadioViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RadioViewController.h; sourceTree = "<group>"; };
-		E61DF1AC1AE2A29100796DB0 /* RadioViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RadioViewController.m; sourceTree = "<group>"; };
-		E61DF1AE1AE2A29100796DB0 /* SWRevealViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SWRevealViewController.h; sourceTree = "<group>"; };
-		E61DF1AF1AE2A29100796DB0 /* SWRevealViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SWRevealViewController.m; sourceTree = "<group>"; };
-		E61DF1B01AE2A29100796DB0 /* TokenController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TokenController.h; sourceTree = "<group>"; };
-		E61DF1B11AE2A29100796DB0 /* TokenController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TokenController.m; sourceTree = "<group>"; };
-		E61DF1B21AE2A29100796DB0 /* ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		E61DF1B31AE2A29100796DB0 /* ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		E61DF1B41AE2A29100796DB0 /* UIActivityIndicatorView+AFNetworking.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIActivityIndicatorView+AFNetworking.h"; sourceTree = "<group>"; };
 		E61DF1B51AE2A29100796DB0 /* UIActivityIndicatorView+AFNetworking.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIActivityIndicatorView+AFNetworking.m"; sourceTree = "<group>"; };
 		E61DF1B61AE2A29100796DB0 /* UIAlertView+AFNetworking.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIAlertView+AFNetworking.h"; sourceTree = "<group>"; };
@@ -213,13 +179,13 @@
 				E6185B921ACD5FFF00E45AEB /* LaunchScreen.xib */,
 				E661AC9E1AD3343600916852 /* RadioViewController.h */,
 				E661AC9F1AD3343600916852 /* RadioViewController.m */,
-				E6185B831ACD5FFF00E45AEB /* Supporting Files */,
 				E635F0351AD5669F00D41E08 /* ConnexionViewContoller.h */,
 				E635F0361AD5669F00D41E08 /* ConnexionViewContoller.m */,
 				E673C4DA1AD6AF54006AF698 /* lecteurViewController.h */,
 				E673C4DB1AD6AF54006AF698 /* lecteurViewController.m */,
 				E673C4DD1AD6B1E4006AF698 /* TokenController.h */,
 				E673C4DE1AD6B1E4006AF698 /* TokenController.m */,
+				E6185B831ACD5FFF00E45AEB /* Supporting Files */,
 			);
 			path = RizeerClientIos;
 			sourceTree = "<group>";
@@ -293,7 +259,6 @@
 			children = (
 				E61DF1991AE2A29100796DB0 /* AFNetworkActivityIndicatorManager.h */,
 				E61DF19A1AE2A29100796DB0 /* AFNetworkActivityIndicatorManager.m */,
-				E61DF19B1AE2A29100796DB0 /* RizeerClientIos */,
 				E61DF1B41AE2A29100796DB0 /* UIActivityIndicatorView+AFNetworking.h */,
 				E61DF1B51AE2A29100796DB0 /* UIActivityIndicatorView+AFNetworking.m */,
 				E61DF1B61AE2A29100796DB0 /* UIAlertView+AFNetworking.h */,
@@ -311,42 +276,6 @@
 				E61DF1C21AE2A29100796DB0 /* UIWebView+AFNetworking.m */,
 			);
 			path = "UIKit+AFNetworking";
-			sourceTree = "<group>";
-		};
-		E61DF19B1AE2A29100796DB0 /* RizeerClientIos */ = {
-			isa = PBXGroup;
-			children = (
-				E61DF19C1AE2A29100796DB0 /* AppDelegate.h */,
-				E61DF19D1AE2A29100796DB0 /* AppDelegate.m */,
-				E61DF19E1AE2A29100796DB0 /* LaunchScreen.xib */,
-				E61DF1A01AE2A29100796DB0 /* Main.storyboard */,
-				E61DF1A21AE2A29100796DB0 /* ConnexionViewContoller.h */,
-				E61DF1A31AE2A29100796DB0 /* ConnexionViewContoller.m */,
-				E61DF1A41AE2A29100796DB0 /* Images.xcassets */,
-				E61DF1A51AE2A29100796DB0 /* Info.plist */,
-				E61DF1A61AE2A29100796DB0 /* lecteurViewController.h */,
-				E61DF1A71AE2A29100796DB0 /* lecteurViewController.m */,
-				E61DF1A81AE2A29100796DB0 /* main.m */,
-				E61DF1A91AE2A29100796DB0 /* NavigationViewController.h */,
-				E61DF1AA1AE2A29100796DB0 /* NavigationViewController.m */,
-				E61DF1AB1AE2A29100796DB0 /* RadioViewController.h */,
-				E61DF1AC1AE2A29100796DB0 /* RadioViewController.m */,
-				E61DF1AD1AE2A29100796DB0 /* SlideOutMenuFiles */,
-				E61DF1B01AE2A29100796DB0 /* TokenController.h */,
-				E61DF1B11AE2A29100796DB0 /* TokenController.m */,
-				E61DF1B21AE2A29100796DB0 /* ViewController.h */,
-				E61DF1B31AE2A29100796DB0 /* ViewController.m */,
-			);
-			path = RizeerClientIos;
-			sourceTree = "<group>";
-		};
-		E61DF1AD1AE2A29100796DB0 /* SlideOutMenuFiles */ = {
-			isa = PBXGroup;
-			children = (
-				E61DF1AE1AE2A29100796DB0 /* SWRevealViewController.h */,
-				E61DF1AF1AE2A29100796DB0 /* SWRevealViewController.m */,
-			);
-			path = SlideOutMenuFiles;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -429,14 +358,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E61DF1CF1AE2A29100796DB0 /* Main.storyboard in Resources */,
-				E61DF1D11AE2A29100796DB0 /* Images.xcassets in Resources */,
-				E61DF1D21AE2A29100796DB0 /* Info.plist in Resources */,
 				E673C4E11AD8257B006AF698 /* note-de-musique.png in Resources */,
 				E6185B8F1ACD5FFF00E45AEB /* Main.storyboard in Resources */,
 				E6185B941ACD5FFF00E45AEB /* LaunchScreen.xib in Resources */,
 				E6185B911ACD5FFF00E45AEB /* Images.xcassets in Resources */,
-				E61DF1CE1AE2A29100796DB0 /* LaunchScreen.xib in Resources */,
 				E673C4E81AD98C03006AF698 /* 01-sofiane-echec_et_mat.mp3 in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -458,24 +383,17 @@
 				E61DF1C71AE2A29100796DB0 /* AFSecurityPolicy.m in Sources */,
 				E673C4DC1AD6AF54006AF698 /* lecteurViewController.m in Sources */,
 				E61DF1C61AE2A29100796DB0 /* AFNetworkReachabilityManager.m in Sources */,
-				E61DF1D31AE2A29100796DB0 /* lecteurViewController.m in Sources */,
 				E661ACA01AD3343600916852 /* RadioViewController.m in Sources */,
-				E61DF1CD1AE2A29100796DB0 /* AppDelegate.m in Sources */,
 				E61DF1CC1AE2A29100796DB0 /* AFNetworkActivityIndicatorManager.m in Sources */,
 				E61DF1C81AE2A29100796DB0 /* AFURLConnectionOperation.m in Sources */,
 				E61DF1C31AE2A29100796DB0 /* AFHTTPRequestOperation.m in Sources */,
 				E61DF1DC1AE2A29100796DB0 /* UIButton+AFNetworking.m in Sources */,
 				E61DF1C51AE2A29100796DB0 /* AFHTTPSessionManager.m in Sources */,
 				E61DF1DD1AE2A29100796DB0 /* UIImageView+AFNetworking.m in Sources */,
-				E61DF1D41AE2A29100796DB0 /* main.m in Sources */,
 				E61DF1DE1AE2A29100796DB0 /* UIProgressView+AFNetworking.m in Sources */,
 				E61DF1C91AE2A29100796DB0 /* AFURLRequestSerialization.m in Sources */,
-				E61DF1D81AE2A29100796DB0 /* TokenController.m in Sources */,
 				E6185B8C1ACD5FFF00E45AEB /* ViewController.m in Sources */,
 				E61DF1E01AE2A29100796DB0 /* UIWebView+AFNetworking.m in Sources */,
-				E61DF1D91AE2A29100796DB0 /* ViewController.m in Sources */,
-				E61DF1D71AE2A29100796DB0 /* SWRevealViewController.m in Sources */,
-				E61DF1D61AE2A29100796DB0 /* RadioViewController.m in Sources */,
 				E61DF1CB1AE2A29100796DB0 /* AFURLSessionManager.m in Sources */,
 				E673C4DF1AD6B1E4006AF698 /* TokenController.m in Sources */,
 				E61DF1C41AE2A29100796DB0 /* AFHTTPRequestOperationManager.m in Sources */,
@@ -485,8 +403,6 @@
 				E61DF1DA1AE2A29100796DB0 /* UIActivityIndicatorView+AFNetworking.m in Sources */,
 				E6185C3A1ACD72FA00E45AEB /* NavigationViewController.m in Sources */,
 				E61DF1DB1AE2A29100796DB0 /* UIAlertView+AFNetworking.m in Sources */,
-				E61DF1D01AE2A29100796DB0 /* ConnexionViewContoller.m in Sources */,
-				E61DF1D51AE2A29100796DB0 /* NavigationViewController.m in Sources */,
 				E6185C371ACD687600E45AEB /* SWRevealViewController.m in Sources */,
 				E6185B861ACD5FFF00E45AEB /* main.m in Sources */,
 				E635F0371AD5669F00D41E08 /* ConnexionViewContoller.m in Sources */,
@@ -526,22 +442,6 @@
 				E6185B931ACD5FFF00E45AEB /* Base */,
 			);
 			name = LaunchScreen.xib;
-			sourceTree = "<group>";
-		};
-		E61DF19E1AE2A29100796DB0 /* LaunchScreen.xib */ = {
-			isa = PBXVariantGroup;
-			children = (
-				E61DF19F1AE2A29100796DB0 /* Base */,
-			);
-			name = LaunchScreen.xib;
-			sourceTree = "<group>";
-		};
-		E61DF1A01AE2A29100796DB0 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				E61DF1A11AE2A29100796DB0 /* Base */,
-			);
-			name = Main.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
