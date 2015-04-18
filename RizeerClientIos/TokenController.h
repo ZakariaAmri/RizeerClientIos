@@ -16,5 +16,6 @@
 -(Boolean) receptionTicket;
 -(Boolean) envoyerTiket;
 -(Boolean) fermetureSession;
++ (NSString*) getToken ;
 
 @end

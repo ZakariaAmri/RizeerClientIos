@@ -15,20 +15,40 @@
 @implementation lecteurViewController {
     AVAudioPlayer* theAudio;
     int duree;
+    NSTimer *sliderTimer;
+}
+- (IBAction)avncer:(id)sender {
+    [theAudio stop];
+    [theAudio setCurrentTime:self.avancementMusicSlider.value];
+    [theAudio prepareToPlay];
+    [theAudio play];
+}
+- (IBAction)dragenter:(id)sender {
+    [theAudio stop];
+    [theAudio setCurrentTime:self.avancementMusicSlider.value];
+    [theAudio prepareToPlay];
+    [theAudio play];
 }
 
 - (IBAction)playMusic:(id)sender {
     if (theAudio == nil) {
-    NSURL *music = [NSURL fileURLWithPath:[[NSBundle mainBundle] pathForResource:@"01-sofiane-echec_et_mat" ofType:@"mp3"]];
-    NSLog(@"%@",music);
-    theAudio = [[AVAudioPlayer alloc] initWithContentsOfURL:music error:nil];
-    theAudio.volume = 4;
+        // Recherche de la music
+        NSURL *music = [NSURL fileURLWithPath:[[NSBundle mainBundle] pathForResource:@"01-sofiane-echec_et_mat" ofType:@"mp3"]];
+        NSLog(@"%@",music);
+        //Initialisation du lecteur
+        theAudio = [[AVAudioPlayer alloc] initWithContentsOfURL:music error:nil];
+        //Initialisation du volume
+        theAudio.volume = 4;
+        //Réglage de la barre d'avancement
         duree = theAudio.duration ;
+        sliderTimer = [NSTimer scheduledTimerWithTimeInterval:1.0 target:self selector:@selector(valuechange:) userInfo:nil repeats:YES];
+        self.avancementMusicSlider.maximumValue = theAudio.duration;
+        self.avancementMusicSlider.value = 0;
+        NSLog(@"maximum value : %f / current Value : %f",self.avancementMusicSlider.maximumValue,self.avancementMusicSlider.value);
+        [self.avancementMusicSlider addTarget:self action:@selector(changeTime:) forControlEvents:UIControlEventValueChanged];
+        [theAudio play];
+        self.avancementMusicSlider.value = theAudio.currentTime;
     }
-    self.avancementMusicSlider.maximumValue = theAudio.duration;
-    self.avancementMusicSlider.value = 0;
-    NSLog(@"maximum value : %f / current Value : %f",self.avancementMusicSlider.maximumValue,self.avancementMusicSlider.value);
-    [theAudio play];
 }
 - (IBAction)pauseMusic:(id)sender {
     [theAudio pause];
@@ -47,28 +67,33 @@
 }
 - (IBAction)voirArtist:(id)sender {
 }
-/*
-- (IBAction)changeTime:(id)sender {
-    self.avancementMusicSlider.value = (int)sender;
-    NSLog(@"current value :%f || on changetime",self.avancementMusicSlider.value);
-     //[[NSNotificationCenter defaultCenter] postNotificationName:@"changeTime" object: self.avancementMusicSlider];
-}*/
-- (IBAction)valuechange:(id)sender {
-    // CMTime newTime = CMTimeMakeWithSeconds(self.avancementMusicSlider.value * durationSeconds, theaudio.currentTime.timescale);
-    //[theAudio seekToTime:newTime];
-    //CMTime newTime = CMTimeMakeWithSeconds(<#Float64 seconds#>, <#int32_t preferredTimeScale#>)
-    //self.avancementMusicSlider.value = self.avancementMusicSlider.//theAudio.currentTime;
-    // [self.avancementMusicSlider reloadInputViews];
-    // NSLog(@"Cureent valueee : %f", self.avancementMusicSlider.value);
-    
+
+- (void)updateSlider {
+    // Update the slider about the music time
+    self.avancementMusicSlider.value = theAudio.currentTime;
 }
 
+- (IBAction)changeTime:(id)sender {
+    [theAudio stop];
+    [theAudio setCurrentTime:self.avancementMusicSlider.value];
+    [theAudio prepareToPlay];
+    [theAudio play];
+}
+- (IBAction)valuechange:(id)sender {
+    self.avancementMusicSlider.value = theAudio.currentTime;
+}
 
+- (void)audioPlayerDidFinishPlaying:(AVAudioPlayer *)player successfully:(BOOL)flag {
+    // Music completed
+    if (flag) {
+        [sliderTimer invalidate];
+    }
 
+}
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-
+//[self.avancementMusicSlider addTarget:self action:@selector(valuechange:)forControlEvents:UIControlEventValueChanged];
     
 }
 

@@ -64,7 +64,9 @@
                                 <color key="maximumTrackTintColor" red="0.50196081399917603" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <color key="thumbTintColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <connections>
+                                    <action selector="avncer:" destination="eGb-ml-iZe" eventType="touchDragInside" id="g6J-3c-b7A"/>
                                     <action selector="changeTime:" destination="eGb-ml-iZe" eventType="touchUpInside" id="nsB-DB-27r"/>
+                                    <action selector="dragenter:" destination="eGb-ml-iZe" eventType="touchDragEnter" id="IPI-8d-Rp1"/>
                                     <action selector="valuechange:" destination="eGb-ml-iZe" eventType="valueChanged" id="fEt-yr-MHk"/>
                                 </connections>
                             </slider>

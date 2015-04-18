@@ -17,7 +17,9 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
-   // self.ticket = [TokenController alloc];
+    self.ticket = [TokenController alloc];
+    Boolean result = _ticket.receptionTicket;
+    NSLog(@"%hhu",result);
     return YES;
 }
 
