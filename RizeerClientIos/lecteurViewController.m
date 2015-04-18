@@ -48,7 +48,8 @@
         [self.avancementMusicSlider addTarget:self action:@selector(changeTime:) forControlEvents:UIControlEventValueChanged];
         [theAudio play];
         self.avancementMusicSlider.value = theAudio.currentTime;
-    }
+    }else
+        [theAudio play];
 }
 - (IBAction)pauseMusic:(id)sender {
     [theAudio pause];

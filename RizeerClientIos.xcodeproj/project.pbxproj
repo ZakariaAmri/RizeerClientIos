@@ -118,7 +118,6 @@
 		E673C4E01AD8257B006AF698 /* note-de-musique.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "note-de-musique.png"; path = "../../note-de-musique.png"; sourceTree = "<group>"; };
 		E673C4E21AD8311C006AF698 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
 		E673C4E31AD8311C006AF698 /* AVKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVKit.framework; path = System/Library/Frameworks/AVKit.framework; sourceTree = SDKROOT; };
-		E673C4E61AD843E0006AF698 /* music.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; name = music.m4a; path = ../../../Desktop/music.m4a; sourceTree = "<group>"; };
 		E673C4E71AD98C03006AF698 /* 01-sofiane-echec_et_mat.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "01-sofiane-echec_et_mat.mp3"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -145,7 +144,6 @@
 		E6185B771ACD5FFF00E45AEB = {
 			isa = PBXGroup;
 			children = (
-				E673C4E61AD843E0006AF698 /* music.m4a */,
 				E673C4E71AD98C03006AF698 /* 01-sofiane-echec_et_mat.mp3 */,
 				E673C4E21AD8311C006AF698 /* AVFoundation.framework */,
 				E673C4E31AD8311C006AF698 /* AVKit.framework */,
