@@ -15,13 +15,13 @@
 
 @implementation NavigationViewController {
     NSArray *menu;
-    IBOutlet UISearchBar *searchBar;
+    //IBOutlet UISearchBar *searchBar;
 }
 
 - (void)viewDidLoad {
     [super viewDidLoad];
     
-    menu = @[@"Search",@"Artistes",@"Morceaux",@"Recommande",@"FuturArtiste",@"radio",@"PlayList",@"Moncompte",@"Parametre"];
+    menu = @[@"Artistes",@"Morceaux",@"Recommande",@"FuturArtiste",@"radio",@"PlayList",@"Moncompte",@"Parametre"];
 }
 
 - (void) preferedsize {

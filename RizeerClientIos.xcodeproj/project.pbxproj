@@ -10,7 +10,6 @@
 		E6185B861ACD5FFF00E45AEB /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = E6185B851ACD5FFF00E45AEB /* main.m */; };
 		E6185B891ACD5FFF00E45AEB /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = E6185B881ACD5FFF00E45AEB /* AppDelegate.m */; };
 		E6185B8C1ACD5FFF00E45AEB /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E6185B8B1ACD5FFF00E45AEB /* ViewController.m */; };
-		E6185B8F1ACD5FFF00E45AEB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E6185B8D1ACD5FFF00E45AEB /* Main.storyboard */; };
 		E6185B911ACD5FFF00E45AEB /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E6185B901ACD5FFF00E45AEB /* Images.xcassets */; };
 		E6185B941ACD5FFF00E45AEB /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = E6185B921ACD5FFF00E45AEB /* LaunchScreen.xib */; };
 		E6185BA01ACD5FFF00E45AEB /* RizeerClientIosTests.m in Sources */ = {isa = PBXBuildFile; fileRef = E6185B9F1ACD5FFF00E45AEB /* RizeerClientIosTests.m */; };
@@ -33,6 +32,7 @@
 		E61DF1DE1AE2A29100796DB0 /* UIProgressView+AFNetworking.m in Sources */ = {isa = PBXBuildFile; fileRef = E61DF1BE1AE2A29100796DB0 /* UIProgressView+AFNetworking.m */; };
 		E61DF1DF1AE2A29100796DB0 /* UIRefreshControl+AFNetworking.m in Sources */ = {isa = PBXBuildFile; fileRef = E61DF1C01AE2A29100796DB0 /* UIRefreshControl+AFNetworking.m */; };
 		E61DF1E01AE2A29100796DB0 /* UIWebView+AFNetworking.m in Sources */ = {isa = PBXBuildFile; fileRef = E61DF1C21AE2A29100796DB0 /* UIWebView+AFNetworking.m */; };
+		E61DF1E61AE2BD0E00796DB0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E61DF1E51AE2BD0E00796DB0 /* Main.storyboard */; };
 		E635F0371AD5669F00D41E08 /* ConnexionViewContoller.m in Sources */ = {isa = PBXBuildFile; fileRef = E635F0361AD5669F00D41E08 /* ConnexionViewContoller.m */; };
 		E661ACA01AD3343600916852 /* RadioViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E661AC9F1AD3343600916852 /* RadioViewController.m */; };
 		E673C4DC1AD6AF54006AF698 /* lecteurViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E673C4DB1AD6AF54006AF698 /* lecteurViewController.m */; };
@@ -61,7 +61,6 @@
 		E6185B881ACD5FFF00E45AEB /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		E6185B8A1ACD5FFF00E45AEB /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
 		E6185B8B1ACD5FFF00E45AEB /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
-		E6185B8E1ACD5FFF00E45AEB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		E6185B901ACD5FFF00E45AEB /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		E6185B931ACD5FFF00E45AEB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
 		E6185B991ACD5FFF00E45AEB /* RizeerClientIosTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RizeerClientIosTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -107,6 +106,7 @@
 		E61DF1C01AE2A29100796DB0 /* UIRefreshControl+AFNetworking.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIRefreshControl+AFNetworking.m"; sourceTree = "<group>"; };
 		E61DF1C11AE2A29100796DB0 /* UIWebView+AFNetworking.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIWebView+AFNetworking.h"; sourceTree = "<group>"; };
 		E61DF1C21AE2A29100796DB0 /* UIWebView+AFNetworking.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIWebView+AFNetworking.m"; sourceTree = "<group>"; };
+		E61DF1E51AE2BD0E00796DB0 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
 		E635F0351AD5669F00D41E08 /* ConnexionViewContoller.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ConnexionViewContoller.h; sourceTree = "<group>"; };
 		E635F0361AD5669F00D41E08 /* ConnexionViewContoller.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ConnexionViewContoller.m; sourceTree = "<group>"; };
 		E661AC9E1AD3343600916852 /* RadioViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RadioViewController.h; sourceTree = "<group>"; };
@@ -169,10 +169,10 @@
 				E6185B881ACD5FFF00E45AEB /* AppDelegate.m */,
 				E6185B8A1ACD5FFF00E45AEB /* ViewController.h */,
 				E6185B8B1ACD5FFF00E45AEB /* ViewController.m */,
-				E6185B8D1ACD5FFF00E45AEB /* Main.storyboard */,
 				E673C4E01AD8257B006AF698 /* note-de-musique.png */,
 				E6185C381ACD72FA00E45AEB /* NavigationViewController.h */,
 				E6185C391ACD72FA00E45AEB /* NavigationViewController.m */,
+				E61DF1E51AE2BD0E00796DB0 /* Main.storyboard */,
 				E6185B901ACD5FFF00E45AEB /* Images.xcassets */,
 				E6185B921ACD5FFF00E45AEB /* LaunchScreen.xib */,
 				E661AC9E1AD3343600916852 /* RadioViewController.h */,
@@ -357,7 +357,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				E673C4E11AD8257B006AF698 /* note-de-musique.png in Resources */,
-				E6185B8F1ACD5FFF00E45AEB /* Main.storyboard in Resources */,
+				E61DF1E61AE2BD0E00796DB0 /* Main.storyboard in Resources */,
 				E6185B941ACD5FFF00E45AEB /* LaunchScreen.xib in Resources */,
 				E6185B911ACD5FFF00E45AEB /* Images.xcassets in Resources */,
 				E673C4E81AD98C03006AF698 /* 01-sofiane-echec_et_mat.mp3 in Resources */,
@@ -426,14 +426,6 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		E6185B8D1ACD5FFF00E45AEB /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				E6185B8E1ACD5FFF00E45AEB /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		E6185B921ACD5FFF00E45AEB /* LaunchScreen.xib */ = {
 			isa = PBXVariantGroup;
 			children = (

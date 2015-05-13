@@ -7,14 +7,15 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "NavigationViewController.h"
 
 @interface ConnexionViewContoller : UIViewController
-
 
 @property IBOutlet UISegmentedControl *segment;
 @property IBOutlet UIView *connexionV;
 @property IBOutlet UIView *inscriptionV;
 @property IBOutlet UIView *visiteV;
+
 
 - (IBAction)segmentValue:(id)sender;
 

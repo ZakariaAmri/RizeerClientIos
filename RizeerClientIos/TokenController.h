@@ -9,9 +9,9 @@
 #import <Foundation/Foundation.h>
 #import "AFNetworking.h"
 
-@interface TokenController : NSUserDefaults
+@interface TokenController : NSString
 
-@property NSString *tokenKeyValue;
+@property(strong,atomic) NSString *tokenKeyValue;
 
 -(Boolean) receptionTicket;
 -(Boolean) envoyerTiket;

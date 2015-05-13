@@ -8,6 +8,7 @@
 
 #import "ConnexionViewContoller.h"
 #import "AppDelegate.h"
+#import "SWRevealViewController.h"
 
 @interface ConnexionViewContoller ()
 
@@ -44,6 +45,7 @@
     NSLog(@"Le ticket est : %d",test);
     
 }
+
 
 - (void)viewDidLoad {
     [super viewDidLoad];
