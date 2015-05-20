@@ -15,8 +15,17 @@
 @property IBOutlet UIView *connexionV;
 @property IBOutlet UIView *inscriptionV;
 @property IBOutlet UIView *visiteV;
-
+// Inscription
+@property (strong, nonatomic) IBOutlet UITextField *login;
+@property (strong, nonatomic) IBOutlet UITextField *pseudo;
+@property (strong, nonatomic) IBOutlet UITextField *mail;
+@property (strong, nonatomic) IBOutlet UITextField *passeword;
+//Connexion
+@property (strong, nonatomic) IBOutlet UITextField *mailCo;
+@property (strong, nonatomic) IBOutlet UITextField *passCo;
 
 - (IBAction)segmentValue:(id)sender;
+
+- (IBAction)inscription:(id)sender;
 
 @end

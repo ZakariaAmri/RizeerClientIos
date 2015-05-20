@@ -9,6 +9,7 @@
 #import "ConnexionViewContoller.h"
 #import "AppDelegate.h"
 #import "SWRevealViewController.h"
+#import "AFHTTPRequestOperationManager.h"
 
 @interface ConnexionViewContoller ()
 
@@ -38,11 +39,79 @@
             break;
     }
 }
+
+- (IBAction)inscription:(id)sender {
+    NSString *url = @"http://localhost:9000/inscr/";
+    url = [url stringByAppendingString:_login.text];
+    url = [url stringByAppendingString:@"/"];
+    url = [url stringByAppendingString:_passeword.text];
+    url = [url stringByAppendingString:@"/"];
+    url = [url stringByAppendingString:_mail.text];
+    url = [url stringByAppendingString:@"/"];
+    url = [url stringByAppendingString:_pseudo.text];
+    /* Requet synchrone
+    NSURL *change = [NSURL URLWithString:url];
+    NSURLRequest *test = [NSURLRequest requestWithURL:change];
+    NSURLResponse *response;
+    NSError *error;
+    NSData *donnee = [NSURLConnection sendSynchronousRequest:test returningResponse:&response error:&error];
+    NSString *reponseString = [ [ NSString alloc] initWithData:donnee encoding:NSUTF8StringEncoding];
+    if (!error)
+        NSLog(@"%@",reponseString);
+    else
+        NSLog(@"%@",error);
+    */
+    //Requet asynchrone
+    NSURLRequest * urlRequest = [NSURLRequest requestWithURL:[NSURL URLWithString:url]];
+    NSURLResponse * response = nil;
+    NSError * error = nil;
+    NSData * data = [NSURLConnection sendSynchronousRequest:urlRequest
+                                          returningResponse:&response
+                                                      error:&error];
+    NSString *reponseString = [ [ NSString alloc] initWithData:data encoding:NSUTF8StringEncoding];
+    if (error == nil)
+    {
+        NSLog(@"%@",error);
+    }
+    NSLog(@"%@",reponseString);
+    NSLog(@"%@",url);
+   
+}
 - (IBAction)connexion:(id)sender {
-    Boolean test;
+    NSString *token;
+    NSString *url = @"http://localhost:9000/connex/";
+    url = [url stringByAppendingString:_mailCo.text];
+    url = [url stringByAppendingString:@"/"];
+    url = [url stringByAppendingString:_passCo.text];
+    /*
+    NSURLRequest * urlRequest = [NSURLRequest requestWithURL:[NSURL URLWithString:url]];
+    NSURLResponse * response = nil;
+    NSError * error = nil;
+    NSData * data = [NSURLConnection sendSynchronousRequest:urlRequest
+                                          returningResponse:&response
+                                                      error:&error];
+    NSString *reponseString = [ [ NSString alloc] initWithData:data encoding:NSUTF8StringEncoding];
+    if (error == nil)
+    {
+        NSLog(@"%@",error);
+    }*/
+    NSURL *change = [NSURL URLWithString:url];
+    NSURLRequest *test = [NSURLRequest requestWithURL:change];
+    NSURLResponse *response;
+    NSError *error;
+    NSData *donnee = [NSURLConnection sendSynchronousRequest:test returningResponse:&response error:&error];
+    NSString *reponseString = [ [ NSString alloc] initWithData:donnee encoding:NSUTF8StringEncoding];
+    if (!error)
+        NSLog(@" ! error : %@",reponseString);
+    else
+        NSLog(@"error  : %@",error);
+    NSLog(@" test  Connexion= %@",reponseString);
+    NSLog(@"url= %@",url); 
+    
+    
     TokenController *t = [[TokenController alloc] init];
-    test = [t receptionTicket];
-    NSLog(@"Le ticket est : %d",test);
+    token = [t envoyerTiket];
+    NSLog(@"Le ticket est : %@",token);
     
 }
 
@@ -50,12 +119,12 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
-    /*
+    /* 
     connexionB.layer.borderWidth = 1.0f;
     connexionB.layer.cornerRadius = 10;
     connexionB.layer.borderColor = [[UIColor grayColor] CGColor];
      */
-    _segment.selectedSegmentIndex = 1;
+    //_segment.selectedSegmentIndex = 1;
     /*
     _connexionV.hidden = YES;
     _inscriptionV.hidden = NO;

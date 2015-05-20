@@ -9,13 +9,13 @@
 #import <Foundation/Foundation.h>
 #import "AFNetworking.h"
 
-@interface TokenController : NSString
+@interface TokenController : NSObject
 
 @property(strong,atomic) NSString *tokenKeyValue;
 
--(Boolean) receptionTicket;
--(Boolean) envoyerTiket;
--(Boolean) fermetureSession;
-+ (NSString*) getToken ;
+-(NSString*) receptionTicket;
+-(NSString*) envoyerTiket;
+-(NSString*) fermetureSession;
+
 
 @end

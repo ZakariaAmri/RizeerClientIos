@@ -118,7 +118,7 @@
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="Titre de la musique" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ngU-6C-nZq">
                                 <rect key="frame" x="227" y="64" width="146" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tUd-bw-0kk">
@@ -203,55 +203,87 @@
                                     <action selector="segmentValue:" destination="ylr-Nv-k4a" eventType="valueChanged" id="3eg-UC-gSz"/>
                                 </connections>
                             </segmentedControl>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="xGM-yB-RXU" userLabel="ConnexionView">
-                                <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
-                                <subviews>
-                                    <textField opaque="NO" clipsSubviews="YES" contentMode="center" contentHorizontalAlignment="center" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Login ou mail" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="bGi-tR-WlF">
-                                        <rect key="frame" x="246" y="0.0" width="108" height="30"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                        <textInputTraits key="textInputTraits"/>
-                                    </textField>
-                                    <textField opaque="NO" clipsSubviews="YES" contentMode="center" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Passeword" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="CEj-4N-oXf">
-                                        <rect key="frame" x="253" y="0.0" width="93" height="30"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                        <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
-                                    </textField>
-                                    <button opaque="NO" contentMode="center" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oUU-O4-8pg">
-                                        <rect key="frame" x="263" y="0.0" width="74" height="30"/>
-                                        <state key="normal" title="Connexion">
-                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                        </state>
-                                        <connections>
-                                            <action selector="connexion:" destination="ylr-Nv-k4a" eventType="touchUpInside" id="sII-O8-Ibj"/>
-                                            <segue destination="vXZ-lx-hvc" kind="modal" modalTransitionStyle="crossDissolve" id="h5T-eG-Wev"/>
-                                        </connections>
-                                    </button>
-                                </subviews>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                <constraints>
-                                    <constraint firstAttribute="centerX" secondItem="oUU-O4-8pg" secondAttribute="centerX" id="41e-BW-oO0"/>
-                                    <constraint firstAttribute="centerX" secondItem="CEj-4N-oXf" secondAttribute="centerX" id="GaJ-ub-wii"/>
-                                    <constraint firstItem="oUU-O4-8pg" firstAttribute="top" secondItem="CEj-4N-oXf" secondAttribute="top" id="MfP-as-id0"/>
-                                    <constraint firstItem="bGi-tR-WlF" firstAttribute="top" secondItem="xGM-yB-RXU" secondAttribute="top" constant="110" id="URs-g1-lLf"/>
-                                    <constraint firstItem="CEj-4N-oXf" firstAttribute="top" secondItem="xGM-yB-RXU" secondAttribute="top" constant="10" id="bMB-dr-snl"/>
-                                    <constraint firstAttribute="centerX" secondItem="bGi-tR-WlF" secondAttribute="centerX" id="eL3-Sd-9Ip"/>
-                                    <constraint firstItem="oUU-O4-8pg" firstAttribute="top" secondItem="xGM-yB-RXU" secondAttribute="top" id="hk1-5b-lhC"/>
-                                    <constraint firstItem="oUU-O4-8pg" firstAttribute="top" secondItem="xGM-yB-RXU" secondAttribute="top" id="mV8-hU-ZkZ"/>
-                                    <constraint firstItem="oUU-O4-8pg" firstAttribute="top" secondItem="bGi-tR-WlF" secondAttribute="top" id="ux1-cS-eQ6"/>
-                                </constraints>
-                            </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="6fY-Mb-VhE" userLabel="VisiteView">
                                 <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                             </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="zcN-Vu-qdS" userLabel="InscriptionView">
                                 <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                                 <subviews>
-                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="VjO-26-8K3">
-                                        <rect key="frame" x="252" y="186" width="97" height="30"/>
+                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Login" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="1dX-3O-gqc">
+                                        <rect key="frame" x="252" y="110" width="156" height="30"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <textInputTraits key="textInputTraits"/>
                                     </textField>
+                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="pseudo" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="sRw-gq-zb4">
+                                        <rect key="frame" x="252" y="173" width="156" height="30"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="@mail" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="w9A-qm-yYC">
+                                        <rect key="frame" x="252" y="247" width="156" height="30"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="passeword" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="gtQ-7N-Hpx">
+                                        <rect key="frame" x="252" y="316" width="156" height="30"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
+                                    </textField>
+                                    <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0ic-dz-eg4">
+                                        <rect key="frame" x="282" y="354" width="86" height="30"/>
+                                        <state key="normal" title="S'inscrire">
+                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="inscription:" destination="ylr-Nv-k4a" eventType="touchUpInside" id="5fc-Ih-Nb9"/>
+                                        </connections>
+                                    </button>
                                 </subviews>
+                                <constraints>
+                                    <constraint firstItem="gtQ-7N-Hpx" firstAttribute="top" secondItem="w9A-qm-yYC" secondAttribute="bottom" constant="39" id="0XH-Kv-LT6"/>
+                                    <constraint firstAttribute="centerX" secondItem="1dX-3O-gqc" secondAttribute="centerX" id="DVr-bA-Uz0"/>
+                                    <constraint firstAttribute="centerX" secondItem="sRw-gq-zb4" secondAttribute="centerX" id="IPB-aO-ifx"/>
+                                    <constraint firstItem="1dX-3O-gqc" firstAttribute="top" secondItem="zcN-Vu-qdS" secondAttribute="top" constant="110" id="Ibe-Sv-3X4"/>
+                                    <constraint firstAttribute="centerX" secondItem="w9A-qm-yYC" secondAttribute="centerX" id="Lje-lY-zKP"/>
+                                    <constraint firstItem="0ic-dz-eg4" firstAttribute="top" secondItem="gtQ-7N-Hpx" secondAttribute="bottom" constant="8" id="R1o-2a-lMs"/>
+                                    <constraint firstAttribute="centerX" secondItem="0ic-dz-eg4" secondAttribute="centerX" id="RnI-X8-vNc"/>
+                                    <constraint firstItem="w9A-qm-yYC" firstAttribute="top" secondItem="sRw-gq-zb4" secondAttribute="bottom" constant="44" id="hLU-lu-Qrb"/>
+                                    <constraint firstAttribute="centerX" secondItem="gtQ-7N-Hpx" secondAttribute="centerX" id="pWx-av-lKQ"/>
+                                    <constraint firstItem="sRw-gq-zb4" firstAttribute="top" secondItem="1dX-3O-gqc" secondAttribute="bottom" constant="33" id="sbY-Jz-9eE"/>
+                                </constraints>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="xGM-yB-RXU" userLabel="ConnexionView">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                                <subviews>
+                                    <textField opaque="NO" clipsSubviews="YES" contentMode="center" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Login ou mail" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="bGi-tR-WlF">
+                                        <rect key="frame" x="246" y="185" width="108" height="30"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                    <textField opaque="NO" clipsSubviews="YES" contentMode="center" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Passeword" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="CEj-4N-oXf">
+                                        <rect key="frame" x="254" y="285" width="93" height="30"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
+                                    </textField>
+                                    <button opaque="NO" contentMode="center" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oUU-O4-8pg">
+                                        <rect key="frame" x="263" y="355" width="74" height="30"/>
+                                        <state key="normal" title="Connexion">
+                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="connexion:" destination="ylr-Nv-k4a" eventType="touchUpInside" id="eN4-ev-aWq"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstItem="CEj-4N-oXf" firstAttribute="top" secondItem="bGi-tR-WlF" secondAttribute="bottom" constant="70" id="6Ui-Tm-Wjs"/>
+                                    <constraint firstAttribute="centerX" secondItem="bGi-tR-WlF" secondAttribute="centerX" id="SFI-qK-upN"/>
+                                    <constraint firstItem="bGi-tR-WlF" firstAttribute="top" relation="greaterThanOrEqual" secondItem="xGM-yB-RXU" secondAttribute="top" constant="70" id="XzG-ho-UA1"/>
+                                    <constraint firstAttribute="centerX" secondItem="CEj-4N-oXf" secondAttribute="centerX" id="cob-sx-8xe"/>
+                                    <constraint firstItem="oUU-O4-8pg" firstAttribute="top" secondItem="CEj-4N-oXf" secondAttribute="bottom" constant="70" id="sEb-qs-YSQ"/>
+                                    <constraint firstAttribute="centerX" secondItem="oUU-O4-8pg" secondAttribute="centerX" id="v3a-qe-pJJ"/>
+                                </constraints>
                             </view>
                         </subviews>
                         <constraints>
@@ -273,6 +305,12 @@
                     <connections>
                         <outlet property="connexionV" destination="xGM-yB-RXU" id="sZE-zV-9Qj"/>
                         <outlet property="inscriptionV" destination="zcN-Vu-qdS" id="M2T-Ru-fxy"/>
+                        <outlet property="login" destination="1dX-3O-gqc" id="Y4t-a7-Jdz"/>
+                        <outlet property="mail" destination="w9A-qm-yYC" id="3y8-0y-l9d"/>
+                        <outlet property="mailCo" destination="bGi-tR-WlF" id="fbz-iC-Wqs"/>
+                        <outlet property="passCo" destination="CEj-4N-oXf" id="LlP-p6-QTF"/>
+                        <outlet property="passeword" destination="gtQ-7N-Hpx" id="3E7-kH-W9C"/>
+                        <outlet property="pseudo" destination="sRw-gq-zb4" id="LON-Xf-lT0"/>
                         <outlet property="segment" destination="GTp-rd-Umg" id="vr1-PF-qdf"/>
                         <outlet property="visiteV" destination="6fY-Mb-VhE" id="GIP-Dv-sSP"/>
                     </connections>

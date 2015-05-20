@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		E600CA311B0CBA5C00F818A8 /* test.html in Resources */ = {isa = PBXBuildFile; fileRef = E600CA301B0CBA5C00F818A8 /* test.html */; };
 		E6185B861ACD5FFF00E45AEB /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = E6185B851ACD5FFF00E45AEB /* main.m */; };
 		E6185B891ACD5FFF00E45AEB /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = E6185B881ACD5FFF00E45AEB /* AppDelegate.m */; };
 		E6185B8C1ACD5FFF00E45AEB /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E6185B8B1ACD5FFF00E45AEB /* ViewController.m */; };
@@ -41,6 +42,7 @@
 		E673C4E41AD8311C006AF698 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E673C4E21AD8311C006AF698 /* AVFoundation.framework */; };
 		E673C4E51AD8311C006AF698 /* AVKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E673C4E31AD8311C006AF698 /* AVKit.framework */; };
 		E673C4E81AD98C03006AF698 /* 01-sofiane-echec_et_mat.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = E673C4E71AD98C03006AF698 /* 01-sofiane-echec_et_mat.mp3 */; };
+		E6A1D5321B07522E00555A2C /* InscriptionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E6A1D5311B07522E00555A2C /* InscriptionViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -54,6 +56,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		E600CA301B0CBA5C00F818A8 /* test.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = test.html; sourceTree = "<group>"; };
 		E6185B801ACD5FFF00E45AEB /* RizeerClientIos.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RizeerClientIos.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E6185B841ACD5FFF00E45AEB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E6185B851ACD5FFF00E45AEB /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -115,10 +118,12 @@
 		E673C4DB1AD6AF54006AF698 /* lecteurViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = lecteurViewController.m; sourceTree = "<group>"; };
 		E673C4DD1AD6B1E4006AF698 /* TokenController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TokenController.h; sourceTree = "<group>"; };
 		E673C4DE1AD6B1E4006AF698 /* TokenController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TokenController.m; sourceTree = "<group>"; };
-		E673C4E01AD8257B006AF698 /* note-de-musique.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "note-de-musique.png"; path = "../../note-de-musique.png"; sourceTree = "<group>"; };
+		E673C4E01AD8257B006AF698 /* note-de-musique.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "note-de-musique.png"; path = "../note-de-musique.png"; sourceTree = "<group>"; };
 		E673C4E21AD8311C006AF698 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
 		E673C4E31AD8311C006AF698 /* AVKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVKit.framework; path = System/Library/Frameworks/AVKit.framework; sourceTree = SDKROOT; };
 		E673C4E71AD98C03006AF698 /* 01-sofiane-echec_et_mat.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "01-sofiane-echec_et_mat.mp3"; sourceTree = "<group>"; };
+		E6A1D5301B07522E00555A2C /* InscriptionViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = InscriptionViewController.h; sourceTree = "<group>"; };
+		E6A1D5311B07522E00555A2C /* InscriptionViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = InscriptionViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -145,6 +150,7 @@
 			isa = PBXGroup;
 			children = (
 				E673C4E71AD98C03006AF698 /* 01-sofiane-echec_et_mat.mp3 */,
+				E673C4E01AD8257B006AF698 /* note-de-musique.png */,
 				E673C4E21AD8311C006AF698 /* AVFoundation.framework */,
 				E673C4E31AD8311C006AF698 /* AVKit.framework */,
 				E6185B821ACD5FFF00E45AEB /* RizeerClientIos */,
@@ -169,10 +175,12 @@
 				E6185B881ACD5FFF00E45AEB /* AppDelegate.m */,
 				E6185B8A1ACD5FFF00E45AEB /* ViewController.h */,
 				E6185B8B1ACD5FFF00E45AEB /* ViewController.m */,
-				E673C4E01AD8257B006AF698 /* note-de-musique.png */,
 				E6185C381ACD72FA00E45AEB /* NavigationViewController.h */,
 				E6185C391ACD72FA00E45AEB /* NavigationViewController.m */,
 				E61DF1E51AE2BD0E00796DB0 /* Main.storyboard */,
+				E600CA301B0CBA5C00F818A8 /* test.html */,
+				E6A1D5301B07522E00555A2C /* InscriptionViewController.h */,
+				E6A1D5311B07522E00555A2C /* InscriptionViewController.m */,
 				E6185B901ACD5FFF00E45AEB /* Images.xcassets */,
 				E6185B921ACD5FFF00E45AEB /* LaunchScreen.xib */,
 				E661AC9E1AD3343600916852 /* RadioViewController.h */,
@@ -358,6 +366,7 @@
 			files = (
 				E673C4E11AD8257B006AF698 /* note-de-musique.png in Resources */,
 				E61DF1E61AE2BD0E00796DB0 /* Main.storyboard in Resources */,
+				E600CA311B0CBA5C00F818A8 /* test.html in Resources */,
 				E6185B941ACD5FFF00E45AEB /* LaunchScreen.xib in Resources */,
 				E6185B911ACD5FFF00E45AEB /* Images.xcassets in Resources */,
 				E673C4E81AD98C03006AF698 /* 01-sofiane-echec_et_mat.mp3 in Resources */,
@@ -382,6 +391,7 @@
 				E673C4DC1AD6AF54006AF698 /* lecteurViewController.m in Sources */,
 				E61DF1C61AE2A29100796DB0 /* AFNetworkReachabilityManager.m in Sources */,
 				E661ACA01AD3343600916852 /* RadioViewController.m in Sources */,
+				E6A1D5321B07522E00555A2C /* InscriptionViewController.m in Sources */,
 				E61DF1CC1AE2A29100796DB0 /* AFNetworkActivityIndicatorManager.m in Sources */,
 				E61DF1C81AE2A29100796DB0 /* AFURLConnectionOperation.m in Sources */,
 				E61DF1C31AE2A29100796DB0 /* AFHTTPRequestOperation.m in Sources */,
@@ -517,6 +527,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/RizeerClientIos",
+				);
 				INFOPLIST_FILE = RizeerClientIos/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -528,6 +542,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/RizeerClientIos",
+				);
 				INFOPLIST_FILE = RizeerClientIos/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";

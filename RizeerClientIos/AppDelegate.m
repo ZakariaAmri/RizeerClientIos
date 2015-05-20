@@ -19,7 +19,7 @@
     // Override point for customization after application launch.
     self.ticket = [TokenController alloc];
     Boolean result = _ticket.receptionTicket;
-    NSLog(@"%hhu",result);
+    NSLog(@" test appdelegate : %hhu",result);
     return YES;
 }
 
