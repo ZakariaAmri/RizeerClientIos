@@ -10,6 +10,10 @@
 #import "AFHTTPRequestOperationManager.h"
 
 @implementation TokenController
+-(void) initTicket :(NSString *)ticket {
+    [[NSUserDefaults standardUserDefaults] setObject:ticket forKey:@"token id"];
+    _tokenKeyValue = ticket;
+}
 
 -(NSString*) receptionTicket {
     NSString *result = nil;
@@ -50,8 +54,7 @@
     return result;
 }
 -(NSString*) envoyerTiket {
-    
-    return _tokenKeyValue;
+    return [[NSUserDefaults standardUserDefaults]objectForKey:@"token id"];
 }
 -(NSString*) fermetureSession {
     

@@ -110,8 +110,25 @@
     
     
     TokenController *t = [[TokenController alloc] init];
+    [t initTicket:reponseString] ;
     token = [t envoyerTiket];
     NSLog(@"Le ticket est : %@",token);
+    
+    /*test  */
+    NSString *url2 = @"http://localhost:9000/visuaMyAcc/";
+    url2 = [url2 stringByAppendingString:token];
+    NSURL *change2 = [NSURL URLWithString:url];
+    NSURLRequest *test2 = [NSURLRequest requestWithURL:change2];
+    NSURLResponse *response2;
+    NSError *error2;
+    NSData *donnee2 = [NSURLConnection sendSynchronousRequest:test2 returningResponse:&response2 error:&error2];
+    NSString *reponseString2 = [ [ NSString alloc] initWithData:donnee2 encoding:NSUTF8StringEncoding];
+    if (!error2)
+        NSLog(@" ! error : %@",reponseString2);
+    else
+        NSLog(@"error  : %@",error2);
+    NSLog(@" test  Profil= %@",reponseString2);
+    NSLog(@"url= %@",url2);
     
 }
 
@@ -119,7 +136,7 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
-    /* 
+    /*
     connexionB.layer.borderWidth = 1.0f;
     connexionB.layer.cornerRadius = 10;
     connexionB.layer.borderColor = [[UIColor grayColor] CGColor];
@@ -130,7 +147,12 @@
     _inscriptionV.hidden = NO;
     _visiteV.hidden = YES;
      */
+    NSString *token;
     self.navigationItem.titleView = self.segment;
+    TokenController *t = [[TokenController alloc] init];
+    token = [t envoyerTiket];
+    NSLog(@"Le ticket est : %@",token);
+
     
 }
 

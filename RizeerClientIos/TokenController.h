@@ -12,7 +12,7 @@
 @interface TokenController : NSObject
 
 @property(strong,atomic) NSString *tokenKeyValue;
-
+-(void) initTicket :(NSString *)ticket ;
 -(NSString*) receptionTicket;
 -(NSString*) envoyerTiket;
 -(NSString*) fermetureSession;
